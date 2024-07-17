@@ -1,8 +1,8 @@
-E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\C#.exe
-E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\C#.dll
-E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\C#.deps.json
-E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\C#.runtimeconfig.json
-E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\C#.pdb
+E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\AsciiMapEditor.exe
+E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\AsciiMapEditor.dll
+E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\AsciiMapEditor.deps.json
+E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\AsciiMapEditor.runtimeconfig.json
+E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\AsciiMapEditor.pdb
 E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\Raylib-cs.dll
 E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\runtimes\linux-x64\native\libraylib.so
 E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\bin\Debug\net7.0\publish\runtimes\osx-arm64\native\libraylib.dylib

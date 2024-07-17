@@ -132,9 +132,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\The Source File of Mine Game\\Raylib\\C#\\asciimapGenerate\\C#.csproj",
-      "projectName": "C#",
-      "projectPath": "E:\\The Source File of Mine Game\\Raylib\\C#\\asciimapGenerate\\C#.csproj",
+      "projectUniqueName": "E:\\The Source File of Mine Game\\Raylib\\C#\\asciimapGenerate\\AsciiMapEditor.csproj",
+      "projectName": "AsciiMapEditor",
+      "projectPath": "E:\\The Source File of Mine Game\\Raylib\\C#\\asciimapGenerate\\AsciiMapEditor.csproj",
       "packagesPath": "C:\\Users\\modern\\.nuget\\packages\\",
       "outputPath": "E:\\The Source File of Mine Game\\Raylib\\C#\\asciimapGenerate\\obj\\",
       "projectStyle": "PackageReference",
