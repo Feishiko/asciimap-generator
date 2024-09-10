@@ -14,9 +14,10 @@ E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\obj\Debug\net7.0\Asci
 E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\obj\Debug\net7.0\AsciiMapEditor.AssemblyInfoInputs.cache
 E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\obj\Debug\net7.0\AsciiMapEditor.AssemblyInfo.cs
 E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\obj\Debug\net7.0\AsciiMapEditor.csproj.CoreCompileInputs.cache
-E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\obj\Debug\net7.0\AsciiMapEditor.csproj.CopyComplete
 E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\obj\Debug\net7.0\AsciiMapEditor.dll
 E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\obj\Debug\net7.0\refint\AsciiMapEditor.dll
 E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\obj\Debug\net7.0\AsciiMapEditor.pdb
 E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\obj\Debug\net7.0\AsciiMapEditor.genruntimeconfig.cache
 E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\obj\Debug\net7.0\ref\AsciiMapEditor.dll
+E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\obj\Debug\net7.0\AsciiMapEditor.sourcelink.json
+E:\The Source File of Mine Game\Raylib\C#\asciimapGenerate\obj\Debug\net7.0\AsciiMap.2DF47CA5.Up2Date
