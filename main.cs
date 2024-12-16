@@ -1,6 +1,8 @@
 using System.Data;
 using Raylib_cs;
 using System.Numerics;
+using System.Runtime.InteropServices;
+using System.Text;
 
 namespace RaylibGame;
 
@@ -16,7 +18,7 @@ class Program
     public static string[,] map = new string[80, 80];
     public static Camera2D camera = new();
     public static Vector2 dragPosition = new();
-    public static void Main()
+    unsafe public static void Main()
     {
         Raylib.InitWindow(800, 480, "Ascii Map Editor");
         camera.Zoom = 1;
@@ -32,7 +34,7 @@ class Program
         Raylib.CloseWindow();
     }
 
-    public static void Update()
+    unsafe public static void Update()
     {
         buttonMinusX.Update();
         buttonPlusX.Update();
@@ -51,7 +53,7 @@ class Program
         }
 
         // Camera Control
-        camera.Zoom += Raylib.GetMouseWheelMove()*.2f;
+        camera.Zoom += Raylib.GetMouseWheelMove() * .2f;
         if (Raylib.IsMouseButtonDown(MouseButton.Middle))
         {
             camera.Offset += Raylib.GetMouseDelta();
@@ -71,6 +73,40 @@ class Program
                 saveString += "\n";
             }
             File.WriteAllText("./ascii.txt", saveString);
+        }
+
+        // Drop File and Load
+        if (Raylib.IsFileDropped())
+        {
+            // Read File
+            var file = Raylib.LoadDroppedFiles();
+            byte* singlePointer = *file.Paths;
+            int length = 0;
+            while (singlePointer[length] != 0)
+            {
+                length++;
+            }
+            string filePath = Encoding.UTF8.GetString(singlePointer, length);
+            Raylib.UnloadDroppedFiles(file);
+            // Load Level
+            map = new string[80, 80];
+            char[] asciiInfo = File.ReadAllText(filePath).ToCharArray();
+            int maxWidth = 0;
+            int maxHeight = 0;
+            int currentWidth = 0;
+            for (int asciiPointer = 0; asciiPointer < asciiInfo.Length; asciiPointer++)
+            {
+                map[currentWidth, maxHeight] = asciiInfo[asciiPointer].ToString();
+                currentWidth += 1;
+                if (asciiInfo[asciiPointer] == '\n')
+                {
+                    maxHeight += 1;
+                    maxWidth = Math.Max(currentWidth, maxWidth);
+                    currentWidth = 0;
+                }
+            }
+            maxX = maxWidth - 1;
+            maxY = maxHeight;
         }
     }
 
@@ -99,7 +135,7 @@ class Program
             for (int x = 0; x < maxX; x++)
             {
                 Raylib.DrawRectangleLines(10 + x * 32, 80 + y * 32, 32, 32, Color.Black);
-                if (worldMousePos.X > 10 + x * 32 && worldMousePos.X < 42 + x * 32  &&
+                if (worldMousePos.X > 10 + x * 32 && worldMousePos.X < 42 + x * 32 &&
                 worldMousePos.Y > 80 + y * 32 && worldMousePos.Y < 112 + y * 32)
                 {
                     Raylib.DrawText(ascii, 10 + x * 32 + 10, 80 + y * 32, 30, Color.Gray);
