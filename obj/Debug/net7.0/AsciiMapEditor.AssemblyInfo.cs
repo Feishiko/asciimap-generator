@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AsciiMapEditor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7336627c583a8cf2a2f85842fd0dcf3bc38b3757")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+364cccbc9540ef7003473e1d84e2f5056559db7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("AsciiMapEditor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AsciiMapEditor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

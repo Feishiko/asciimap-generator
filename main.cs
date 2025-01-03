@@ -116,6 +116,7 @@ class Program
         Raylib.SetWindowState(ConfigFlags.ResizableWindow);
 
         Raylib.DrawText("[LMB]SetAscii | [RMB]RemoveAscii | [Anykey]ChooseAscii | [Enter]Save | [MMB] Move&Scale Viewport", 12, 12, 20, Color.Black);
+        Raylib.DrawText("Drag a ascii file to load a screen", 130, 30, 20, Color.Black);
         // UI
         Raylib.DrawText("X", 4, 34, 16, Color.Black);
         buttonMinusX.Draw();
